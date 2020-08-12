@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wisata"/>
+            <LinearLayout android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/txt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Wisata"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:id="@+id/txt_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat" />
+
+                <TextView
+                    android:textSize="10sp"
+                    android:id="@+id/txt_kota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kota"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/btn_delete"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:text="Hapus" />
+
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/btn_maps"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:text="Lokasi" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
